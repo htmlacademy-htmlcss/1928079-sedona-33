@@ -10,6 +10,11 @@
       <ul class="navigation-list">
         <li class="navigation-item">
           <a class="navigation-link" href="index.html">
+            <span class="visually-hidden">Логотип
+              </span> </a>
+            </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="index.html">
           Главная </a>
         </li>
         <li class="navigation-item">
@@ -34,7 +39,7 @@
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#">
-            <button class="button">Хочу сюда!
+            <button class="button" type="button">Хочу сюда!
             </button>
           </a>
         </li>
@@ -43,7 +48,7 @@
   </header>
   <main class="main-index">
     <h1 class="visually-hidden">Город Седона</h1>
-    <img class="welcome-image" src="" alt="Добро пожаловать в Седону!">
+    <img class="welcome-image" src="index-background.jpg" width=1200px height="485px" alt="Добро пожаловать в Седону!">
     <section class="advantages">
       <h2 class="sedona-decription">
         Седона — небольшой городок в Аризоне, <br>
@@ -56,7 +61,7 @@
         <p class="advantages-number">— №1 —</p>
         <p class="first-advantage-description">Седона — не аттракцион для туристов, там течёт 
           своя жизнь</p></div>
-        <img src="sedona-view-buildings.jpg" width="800" height="384" alt="Дома в Седоне">"
+        <img src="photo-1.jpg" width="800" height="384" alt="Дома в Седоне">"
       </div>
       <div class="in-town-advantages">
         <ul>
@@ -75,7 +80,7 @@
       <div><h3 class="advantage-name second-advantage">Там есть мост дьявола</h3>
         <p class="advantages-number">— №2 —</p>
         <p class="second-advantage-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p></div>
-        <img src="sedona-rocks-view.jpg" width="800" height="384" alt="Мост дьявола">"
+        <img src="photo-2.jpg" width="800" height="384" alt="Мост дьявола">"
       </div>
       <div class="other-advantages">
         <ul>
@@ -96,17 +101,49 @@
                 </ul>     
     </section>
     <section class="hotel-search">
-      <h2 class="hotel-search-question">Заинтересовались?</h2>
+      <h2 class="hotel-search-title">Заинтересовались?</h2>
       <p class="hotel-search-description">Укажите предполагаемые даты поездки,
         и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <button class="button hotel-search-button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+        <button class="button hotel-search-button" type="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
     </section>
-
-
   </main>
+    <section class="subscribe main-subscribe">
+      <label for="email"></label><h2 class="subscribe-title">Подпишитесь на рассылку</h2></label>
+      <p class="subscribe-description">Только полезная информация и никакого спама,
+        честное бойскаутское!</p>
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+          <input type="text" id="email" name="email" placeholder="Ваш e-mail">
+          <button class="subscribe-button" type="submit">ПОДПИСАТЬСЯ</button>
+        </form>
+    </section>  
+    <footer class="page-footer">
+      <section class="footer-social">
+        <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a class="button" href="https://twitter.com/htmlacademy_ru">
+                <span class="visually-hidden">Twitter</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="button" href="https://www.facebook.com/htmlacademy">
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="button" href="https://www.youtube.com/c/HTMLAcademyRUS">
+                <span class="visually-hidden">Youtube</span>
+              </a>
+            </li>
+          </ul>
+          </section>
+          <section class="footer-contacts">
+            <h2 class="visually-hidden">Контактный телефон</h2>
+                <a class="footer-contactsphone" href="tel:+78128121212">+7 812 812-12-12</a>
+            <a href="https://htmlacademy.ru/"><img class="footer-contacts-logo" src="" alt="Логотип разработчика"></a>
+    </footer>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+  
 
   </body>
 </html>
