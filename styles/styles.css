@@ -14,7 +14,7 @@
   font-display: swap;
 }
 body {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
@@ -41,6 +41,10 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #756257;
+  padding: 15px;
+  padding-top: 9px;
+  padding-bottom: 8px;
+  border-radius: 4px;
 }
 .welcome {
   background-image: url("../images/index-background.jpg");
@@ -64,10 +68,6 @@ body {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 63px;
-  margin-left: 240px;
-  margin-left: 240px;
-  margin-bottom: 139px;
 }
 .sedona-decription-reasons {
   font-size: 22px;
@@ -136,4 +136,13 @@ body {
   text-decoration: none;
   color: #ffffff;
   background-color: #756257;
+  padding: 15px;
+  border-radius: 10px;
+}
+.subscribe{
+  text-align: center;
+  color: #ffffff;
+  background-image: url("../images/subscribe-background.jpg");
+  width:1200px;
+  height:411px;
 }
