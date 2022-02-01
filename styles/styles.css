@@ -1,0 +1,139 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #ffffff;
+}
+.page-header {
+  color: #000000;
+  background: #e5e5e5;
+}
+
+.navigation-link {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  color: #000000;
+  background-color: #e5e5e5;
+  text-decoration: none;
+}
+.button-navigation-link {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #756257;
+}
+.welcome {
+  background-image: url("../images/index-background.jpg");
+  width: 1200px;
+  height: 485px;
+  left: 40px;
+  top: 65px;
+  background-color: #659293;
+}
+
+.welcome-image {
+  margin-top: 51px;
+  margin-left: 371px;
+  margin-bottom: 82px;
+  margin-right: 371px;
+}
+
+.sedona-decription {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 63px;
+  margin-left: 240px;
+  margin-left: 240px;
+  margin-bottom: 139px;
+}
+.sedona-decription-reasons {
+  font-size: 22px;
+  line-height: 36px;
+  text-align: center;
+  color: #333333;
+}
+.advantage-name {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.advantages-number {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+.advantage-description {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: none;
+  color: #333333;
+}
+.first-advantage,
+.second-advantage {
+  text-align: center;
+  background-color: #83b3d3;
+  color: #ffffff;
+}
+.white-advantages-number {
+  color: #ffffff;
+}
+.home-advantage,
+.souvenirs-advantage,
+.third-advantage,
+.fifth-advantage {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+.fourth-advantage {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+.hotel-search-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.hotel-search-description {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+.hotel-search-button {
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #756257;
+}
