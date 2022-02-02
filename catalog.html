@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./styles/styles.css">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header catalog-header">
       <nav class="navigation">
         <a class="navigation-link" href="index.html">
           <img src="./images/header-logo.svg" width="139" height="70" alt="Логотип сайт" aria-label="Переход на главную страницу"/>
@@ -130,7 +130,7 @@
               <input
                 type="text"
                 name="low-price"
-                placeholder="0 от"
+                placeholder="0"
                 aria-label="Минимальная цена"
               /><span class="price-limit">от</span>
          </label>
@@ -138,13 +138,13 @@
               <input
                 type="text"
                 name="high-price"
-                placeholder="9000 до"
+                placeholder="9000"
                 aria-label="Максимальная цена"
               /><span class="price-limit">до</span>
          </label>
         </div>
-          <a class="apply" type="submit">Применить</a>
-          <a class="reset" type="reset">Сбросить</a>
+          <a class="apply" href="#">Применить</a>
+          <a class="reset" href="#">Сбросить</a>
         </form>
       </section>
 
@@ -259,7 +259,7 @@
         Только полезная информация и никакого спама, честное бойскаутское!
       </p>
       <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-        <input type="email" name="email" placeholder="Ваш e-mail" aria-label="Поле для ввода e-mail"/>
+        <input class="catalog-subscribe-field" type="email" name="email" placeholder="Ваш e-mail" aria-label="Поле для ввода e-mail"/>
         <button class="subscribe-button">Подписаться</button>
       </form>
     </section>
