@@ -31,7 +31,7 @@ body {
   line-height: 26px;
   text-align: center;
   color: #000000;
-  background-color: #ffffff;
+  background-color: #e5e5e5;
   text-decoration: none;
 }
 .button-navigation-link {
@@ -172,6 +172,9 @@ body {
   text-decoration: none;
 }
 .catalog-header {
+  background-color: #ffffff;
+}
+.catalog-header .navigation-link {
   background-color: #ffffff;
 }
 .catalog-filters {
