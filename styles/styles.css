@@ -20,6 +20,10 @@
 	box-sizing: border-box;
 }
 
+html{
+  height: 100%;
+}
+
 html,
 body {
   margin:0;
@@ -41,6 +45,9 @@ body {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
+  /* display: flex;
+  flex-direction: column;  сделал как в демке для стики-футера,но страница каталога потеряла размер почему то*/
+  min-height: 100%;
   color: #000000;
   background-color: #f2f2f2;
 }
@@ -58,6 +65,37 @@ body {
   clip-path: inset(100%);
 }
 
+.navigation-wrapper {
+  display: flex;
+  width: 1060px;
+ }
+
+.navigation-list{
+  display: flex;
+  justify-content:space-between;
+  width: 345px;
+  margin-left: 30px;
+  margin-right: auto;
+  list-style: none;
+}
+
+.user-navigation{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 264px;
+  margin-right: 70px;
+  margin-left: auto;
+}
+
+.header-logo {
+  margin-left: 70px;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
 .page-wrapper {
   max-width: 1200px;
   margin: 0 auto;
@@ -68,6 +106,8 @@ body {
 .page-header {
   color: #000000;
   background: #ffffff;
+  display: flex;
+  margin: 0 auto;
 }
 
 .navigation-link {
@@ -139,7 +179,6 @@ body {
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
-  padding: 100px 40px 60px 40px;
 }
 
 .advantages-number {
@@ -148,7 +187,7 @@ body {
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
-  color: #000000;
+  color: inherit;
 }
 
 .advantage-disc {
@@ -165,10 +204,7 @@ body {
   text-align: center;
   background-color: #83b3d3;
   color: #ffffff;
-}
-
-.white-advantages-number {
-  color: #ffffff;
+  padding: 97px 90px 87px 90px;
 }
 
 .fourth-advantage {
@@ -191,6 +227,7 @@ body {
 
 .hotel-search-button {
   font-size: 20px;
+  font-weight: 700;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
@@ -199,6 +236,8 @@ body {
   background-color: #756257;
   padding: 15px;
   border-radius: 10px;
+  margin: 0 445px; 
+    /* почему то авто марджин не срабатывает, поставил точное число */
 }
 
 .subscribe {
@@ -229,6 +268,21 @@ body {
   border-radius: 0px 10px 10px 0px;
 }
 
+.page-footer{
+  display: flex;
+  margin: 0 auto;
+  justify-content:space-between;
+  align-items: center;
+  max-width: 1056px;
+}
+
+/* .footer-social-list{
+  display: flex;
+  list-style: none;
+  justify-content:space-between;
+  max-width: 107px;
+} */
+
 .footer-contactsphone {
   font-size: 40px;
   line-height: 40px;
@@ -244,22 +298,33 @@ body {
   height: 408px;
   color: #ffffff;
   background-color: #627777;
+  padding: 35px 72px 83px 72px;
 }
 
 .catalog-filters-title {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
+  margin: 0;
+}
+
+.filter-by-infrastructure {
+  magrin-rigt: 67px;
 }
 
 .breadcrumbs {
   font-size: 16px;
   line-height: 21px;
+  display: flex;
+  list-style: none;
 }
 
 .catalog-filter {
   font-size: 18px;
   line-height: 23px;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
 }
 
 .filter-type {
@@ -407,6 +472,12 @@ body {
   padding: 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+}
+
+.in-town-advantages li,
+.other-advantages li {
+  max-width: 400px;
+  padding: 75px;
 }
 
 .advantage-name:nth-child(odd) {
