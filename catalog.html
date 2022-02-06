@@ -9,7 +9,7 @@
    <div class="page-wrapper">
     <header class="page-header">
       <a class="navigation-link" href="index.html">
-        <img class="header-logo" src="../img/svg/header-logo.svg" width="139" height="70" alt="Логотип сайт" aria-label="Переход на главную страницу"/>
+        <img class="header-logo" src="./img/svg/header-logo.svg" width="139" height="70" alt="Логотип сайт" aria-label="Переход на главную страницу"/>
       </a>
       
       <div class="navigation-wrapper">
@@ -41,7 +41,7 @@
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="index.html" aria-label="На главную">
-                  <img src="/img/svg/breadcrumbs-home-icon.svg" width="12" height="12" alt="домой">
+                  <img src="./img/svg/breadcrumbs-home-icon.svg" width="12" height="12" alt="домой">
                   <!-- заменить на свг -->
               </a>
             <li class="breadcrumbs-item">
@@ -154,26 +154,31 @@
         </section>
   
         <section class="search-results">
-          <h2 class="visually-hidden">Результаты поиска</h2>
-              <span class="hotels-found">Найдено гостиниц:38</span>
-          <form
-            class="sorting-type"
-            action="https://echo.htmlacademy.ru/courses"
-            method="get"
-          >
-            <select class="select-control" aria-label="Сортировка">
-              <option value="cheap">Сначала дешёвые</option>
-            </select>
-          </form>
-          <a class="button button-cards button-current" href="#" aria-label="Показать плиткой">
-              <!-- <img src="/images/view-mode-tile.svg" width="16" height="14" alt="вид плиткой"> заменить на свг -->
-          </a>
-          <a class="button button-large" href="#"  aria-label="Показать крупно">
-              <!-- <img src="/images/view-mode-slideshow.svg" width="16" height="14" alt="вид крупно"> заменить на свг -->
-          </a>
-          <a class="button button-list" href="#" aria-label="Показать списком">
-              <!-- <img src="/images/view-mode-list.svg" width="16" height="14" alt="вид списком"> заменить на свг -->
-          </a>
+          <div class="view-type-wrapper">
+            <h2 class="visually-hidden">Результаты поиска</h2>
+                <span class="hotels-found">Найдено гостиниц:38</span>
+            <form
+              class="sorting-type"
+              action="https://echo.htmlacademy.ru/courses"
+              method="get"
+            >
+              <select class="select-control" aria-label="Сортировка">
+                <option value="cheap">Сначала дешёвые</option>
+              </select>
+            </form>
+            <a class="button button-cards button-current" href="#" aria-label="Показать плиткой">
+                <img src="./img/svg/view-mode-tile.svg" width="16" height="14" alt="вид плиткой"> 
+                <!-- заменить на свг -->
+            </a>
+            <a class="button button-large" href="#"  aria-label="Показать крупно">
+                <img src="./img/svg/view-mode-slideshow.svg" width="16" height="14" alt="вид крупно"> 
+                <!-- заменить на свг -->
+            </a>
+            <a class="button button-list" href="#" aria-label="Показать списком">
+                <img src="./img/svg/view-mode-list.svg" width="16" height="14" alt="вид списком"> 
+                <!-- заменить на свг -->
+            </a>
+          </div>
   
           <div class="hotel-card">
             <a class="hotel-card-link" href="#">
@@ -229,32 +234,34 @@
   
           <button class="load-more" type="submit">Загрузить еще</button>
   
-          <ul class="pagination">
-            <li class="pagination-item">
-              <a class="pagination-link pagination-current">1</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">2</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">3</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">4</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">...</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">10</a>
-            </li>
-          </ul>
-          <form class="view-type" action="https://echo.htmlacademy.ru/courses" method="get">
-            <span class="view-type-title">Гостиниц на странице:</span>
-            <select class="select-view-type" aria-label="выбрать количествено гостиниц на странице">
-              <option value="4">4</option>
-            </select>
-          </form>
+          <div class="pagination-wrapper">
+            <ul class="pagination">
+              <li class="pagination-item">
+                <a class="pagination-link pagination-current">1</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">2</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">3</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">4</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">...</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">10</a>
+              </li>
+            </ul>
+            <form class="view-type" action="https://echo.htmlacademy.ru/courses" method="get">
+              <span class="view-type-title">Гостиниц на странице:</span>
+              <select class="select-view-type" aria-label="выбрать количествено гостиниц на странице">
+                <option value="4">4</option>
+              </select>
+            </form>
+          </div>
         </section>
       </main>
   
