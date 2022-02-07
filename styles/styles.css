@@ -386,8 +386,20 @@ body {
 }
 
 .hotel-card {
-  margin: 20px;
+  width: 340px;
+  padding: 20px;
+  margin-right: 18px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-content: ;
+  align-items: flex-start;
 }
+
+.hotel-card:nth-child(3n) {
+  margin-right: 0;
+}
+
 .hotel-card-title {
   font-weight: 700;
   font-size: 24px;
@@ -518,8 +530,10 @@ body {
 }
 
 .hotel-cards-wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0;
 }
 .pagination {
   display: flex;
