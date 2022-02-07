@@ -45,8 +45,6 @@ body {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
-  /* display: flex;
-  flex-direction: column;  сделал как в демке для стики-футера,но страница каталога потеряла размер почему то*/
   min-height: 100%;
   color: #000000;
   background-color: #f2f2f2;
@@ -67,33 +65,32 @@ body {
 
 .navigation-wrapper {
   display: flex;
-  width: 1060px;
+  flex-grow: 1;
+  margin-left: 70px;
+  margin-right: 70px;
 }
 
 .navigation-list {
   display: flex;
-  justify-content: space-between;
-  width: 345px;
   margin-left: 30px;
   margin-right: auto;
   list-style: none;
+  padding: 0;
+}
+
+.navigation-item {
+  margin-right: 34px;
 }
 
 .user-navigation {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  width: 264px;
-  margin-right: 70px;
   margin-left: auto;
 }
 
-.header-logo {
-  margin-left: 70px;
-}
-
-.main-container {
-  flex-grow: 1;
+.button-navigation-link {
+  margin-left: 20px;
 }
 
 .page-wrapper {
@@ -101,13 +98,15 @@ body {
   margin: 0 auto;
   background-color: #ffffff;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .page-header {
   color: #000000;
   background: #ffffff;
   display: flex;
-  margin: 0 auto;
 }
 
 .navigation-link {
@@ -211,6 +210,13 @@ body {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
+.hotel-search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 91px 240px;
+}
+
 .hotel-search-title {
   font-weight: 700;
   font-size: 30px;
@@ -236,8 +242,8 @@ body {
   background-color: #756257;
   padding: 15px;
   border-radius: 10px;
-  margin: 0 445px;
-  /* почему то авто марджин не срабатывает, поставил точное число */
+  width: 575px;
+  align-self: center;
 }
 
 .subscribe {
@@ -249,6 +255,10 @@ body {
   background-image: url("../img/backgrounds/subscribe-background.jpg");
   background-color: #659293;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 94px 200px;
 }
 
 .subscribe-title {
@@ -270,18 +280,10 @@ body {
 
 .page-footer {
   display: flex;
-  margin: 0 auto;
   justify-content: space-between;
   align-items: center;
-  max-width: 1056px;
+  padding: 40px 72px;
 }
-
-/* .footer-social-list{
-  display: flex;
-  list-style: none;
-  justify-content:space-between;
-  max-width: 107px;
-} */
 
 .footer-contactsphone {
   font-size: 40px;
@@ -325,6 +327,7 @@ body {
   line-height: 21px;
   display: flex;
   list-style: none;
+  padding: 0;
 }
 
 .catalog-filter {
@@ -366,6 +369,8 @@ body {
   color: #000000;
   margin-left: 72px;
   margin-right: 72px;
+  padding-top: 50px;
+  padding-bottom: 34px;
 }
 
 .hotels-found {
@@ -437,7 +442,9 @@ body {
   color: #ffffff;
   background: #83b3d3;
   border-radius: 4px;
-  margin: o auto;
+  align-self: center;
+  width: 620px;
+  padding: 17px;
 }
 
 .pagination-link {
@@ -449,6 +456,8 @@ body {
   color: #ffffff;
   background: #83b3d3;
   border-radius: 4px;
+  padding: 15px;
+  margin: 8px;
 }
 
 .pagination-current {
@@ -505,4 +514,23 @@ body {
 .view-type-wrapper {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 56px;
+}
+
+.hotel-cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.pagination {
+  display: flex;
+  list-style: none;
+  margin: 30px auto;
+  padding: 0;
+}
+
+.button-load-more{
+  display: flex;
+  width: 620px;
+  align-self: center;
+  margin: 30px auto;
 }
