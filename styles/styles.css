@@ -309,6 +309,7 @@ body {
   min-width: 200px;
   min-height: 60px;
   margin-left: -5px;
+  border: none;
 }
 
 .subscribe-description {
@@ -363,7 +364,7 @@ body {
   color: #ffffff;
   background-color: #627777;
   padding-left: 71px;
-  /* padding-right: 72px; */
+  padding-right: 72px;
 }
 
 .catalog-filters-title {
@@ -432,6 +433,15 @@ body {
   display: flex;
 }
 
+.filter-by-price-wrapper input{
+  max-width: 140px;
+  min-height: 48px;
+  background: inherit;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 4px;
+}
+
 .apply {
   display: block;
   font-weight: 700;
@@ -444,6 +454,10 @@ body {
   background: #83b3d3;
   border-radius: 4px;
   margin-top: 34px;
+  width: 160px;
+  height: 48px;
+  border-radius: 4px;
+  padding: 16px;
 }
 
 .filter-buttons-wrapper {
@@ -458,6 +472,8 @@ body {
   text-align: center;
   color: #ffffff;
   text-decoration: none;
+  padding: 16px;
+  margin-top: 4px;
 }
 
 .search-results {
@@ -496,13 +512,8 @@ body {
 }
 
 .hotel-card {
-  width: 340px;
-  padding: 20px;
-  margin-right: 18px;
-  margin-bottom: 10px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
 }
 
 .hotel-card:nth-child(3n) {
@@ -574,6 +585,7 @@ body {
   align-self: center;
   width: 620px;
   padding: 17px;
+  border: none;
 }
 
 .pagination-wrapper {
@@ -646,6 +658,7 @@ body {
   min-height: 60px;
   border-radius: 10px 0 0 10px;
   padding: 0 19px 0 22px;
+  border: none;
 }
 
 .in-town-advantages,
@@ -688,10 +701,10 @@ body {
 }
 
 .hotel-cards-wrapper {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   margin: 0;
+  gap: 18px 10px;
 }
 .pagination {
   display: flex;
