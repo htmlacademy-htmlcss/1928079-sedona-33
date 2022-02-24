@@ -532,7 +532,7 @@ body {
 }
 
 .view-buttons-wrapper a:not(:last-child) {
-  margin-right: 45px;
+  margin-right: 8px;
 }
 
 .hotel-card {
@@ -971,4 +971,62 @@ body {
   fill: #756257;
   opacity: 30%;
   outline: none;
+}
+
+.breadcrumbs-link {
+  display: block;
+  border-radius: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.breadcrumbs-link::after {
+  background-image: url("../img/svg/breadcrumbs-arrow.svg");
+  background-repeat: no-repeat;
+}
+
+.breadcrumbs-link:hover {
+  opacity: 60%;
+} 
+
+.breadcrumbs-link:focus {
+  outline: solid 3px #83B3D3;
+}
+
+.breadcrumbs-link:active {
+  opacity: 30%;
+  outline: none;
+} 
+
+.filter-by-price-wrapper:hover {
+  opacity: 60%;
+}
+
+.filter-by-price-wrapper:focus {
+  outline: solid 3px #83B3D3;
+}
+
+.view-buttons-wrapper a {
+  width: 46px;
+  height: 46px;
+  border: 2px solid #E6E6E6;
+  border-radius: 4px;
+}
+
+.button-cards {
+  background: url("../img/svg/view-mode-tile.svg") no-repeat center;
+}
+
+.button-slideshow {
+  background: url("../img/svg/view-mode-slideshow.svg") no-repeat center;
+}
+
+.button-list {
+  background: url("../img/svg/view-mode-list.svg") no-repeat center;
+}
+
+.four-stars-hotel {
+  display: block;
+  background-image: url("../img/svg/hotel-star.svg");
+  background-repeat: repeat-x;
 }
