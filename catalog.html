@@ -20,8 +20,8 @@
                 <li class="navigation-item">
                   <a class="navigation-link" href="#">О Седоне</a>
                 </li>
-                <li class="navigation-item">
-                  <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
+                <li class="navigation-item navigation-link-current">
+                  <a class="navigation-link" href="catalog.html">Гостиницы</a>
                 </li>
              </ul>
           </nav>
@@ -37,7 +37,7 @@
                   <path d="M9.4 17a1 1 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 6 0c1.3 0 2.5.5 3.5 1.3C10.5.5 12 0 13.1 0c3 0 5.5 2.4 5.5 5.4 0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.3.2-.5.3-.9.3Zm-6-9.5 6.1 6.9 6.3-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.8 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4A3.7 3.7 0 0 0 6 2.1a3.3 3.3 0 0 0-3.3 3.3c0 .9.3 1.6.7 2.1Z"/>
                 </svg>
               </a>
-              <a class="button navigation-link button-navigation-link" href="#">Хочу сюда!</a>
+              <a class="button button-navigation-link button-brown" href="#">Хочу сюда!</a>
           </div>
       </div>
     </header>
@@ -159,7 +159,7 @@
            </div>
           </div>
             <div class="filter-buttons-wrapper">
-              <a class="apply" href="#">Применить</a>
+              <a class="apply blue-button" href="#">Применить</a>
               <a class="reset" href="#">Сбросить</a>
             </div>
           </form>
@@ -194,12 +194,12 @@
               <div class="in-card-info">
                 <div class="in-card-info-first-column">
                   <span class="hotel-type-in-card">Гостиница</span>
-                  <a class="hotel-info" href="#">Подробнее</a>
-                  <span class="four-stars-hotel"></span>
+                  <a class="hotel-info button-brown" href="#">Подробнее</a>
+                  <div class="stars four-stars"></div>
                 </div>
                 <div class="in-card-info-second-column">
                   <span class="hotel-price">От 4000 &#x20bd;</span>
-                  <a class="hotel-liked" href="#">В избранное</a>
+                  <a class="hotel-liked button-blue" href="#">В избранное</a>
                   <span class="hotel-rating">Рейтинг: 8,5</span>
                 </div>
               </div>
@@ -213,12 +213,12 @@
               <div class="in-card-info">
                 <div class="in-card-info-first-column">
                   <span class="hotel-type-in-card">Гостиница</span>
-                  <a class="hotel-info" href="#">Подробнее</a>
-                  <!-- <img class="hotel-two-stars" src="/images/3-stars-hotel.svg" width="68" height="17" alt="Отель две звезды" /> заменить на свг -->
+                  <a class="hotel-info button-brown" href="#">Подробнее</a>
+                  <div class="stars three-stars"></div>                
                 </div>
                 <div class="in-card-info-second-column">
                   <span class="hotel-price">От 3000 &#x20bd;</span>
-                  <a class="hotel-liked" href="#">В избранное</a>
+                  <a class="hotel-liked button-blue" href="#">В избранное</a>
                   <span class="hotel-rating">Рейтинг: 8,9</span>
                 </div>
               </div>
@@ -232,12 +232,12 @@
               <div class="in-card-info">
                 <div class="in-card-info-first-column">
                    <span class="hotel-type-in-card">Гостиница</span>
-                   <a class="hotel-info" href="#">Подробнее</a>
-                   <!-- <img class="hotel-two-stars" src="/images/2-stars-hotel.svg" width="43" height="17" alt="Отель две звезды" /> заменить на свг -->
+                   <a class="hotel-info button-brown" href="#">Подробнее</a>
+                   <div class="stars two-stars"></div>                
                 </div>
                 <div class="in-card-info-second-column">
                    <span class="hotel-price">От 2000 &#x20bd;</span>
-                   <a class="hotel-liked liked" href="#">В избранном</a>
+                   <a class="hotel-liked liked button-blue" href="#">В избранном</a>
                    <span class="hotel-rating">Рейтинг: 9,2</span>
                 </div>
               </div>
@@ -251,12 +251,12 @@
                 <div class="in-card-info">
                   <div class="in-card-info-first-column">
                     <span class="hotel-type-in-card">Гостиница</span>
-                    <a class="hotel-info" href="#">Подробнее</a>
-                    <!-- <img class="hotel-four-stars" src="/images/2-stars-hotel.svg" width="43" height="17" alt="Отель две звезды"/> заменить на свг -->
+                    <a class="hotel-info button-brown" href="#">Подробнее</a>
+                    <div class="stars two-stars"></div>
                   </div>
                   <div class="in-card-info-second-column">
                     <span class="hotel-price">От 3000 &#x20bd;</span>
-                    <a class="hotel-liked" href="#">В избранное</a>
+                    <a class="hotel-liked button-blue" href="#">В избранное</a>
                     <span class="hotel-rating">Рейтинг: 9,2</span>
                   </div>
                 </div>
@@ -264,7 +264,7 @@
           </div>
   
           <div class="button-load-more">
-            <button class="load-more" type="submit">Загрузить ещё</button>
+            <button class="load-more button-blue" type="submit">Загрузить еще</button>
           </div>
 
           <div class="pagination-wrapper">
@@ -305,7 +305,7 @@
         </p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <input class="subscribe-field" type="email" name="email" placeholder="Ваш e-mail" aria-label="Поле для ввода e-mail"/>
-          <button class="subscribe-button">Подписаться</button>
+          <button class="subscribe-button button-blue">Подписаться</button>
         </form>
       </section>
     </main>
