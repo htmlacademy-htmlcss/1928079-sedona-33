@@ -179,6 +179,74 @@
           </svg>
          </a> 
     </footer>
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-search">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+          <svg class="close-button" width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="26.5" cy="26.5" r="26.5"/>
+            <path d="M33 21.2L31.8 20L26.5 25.3L21.2 20L20 21.2L25.3 26.5L20 31.8L21.2 33L26.5 27.7L31.8 33L33 31.8L27.7 26.5L33 21.2Z" fill="black"/>
+            </svg>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="field-group hotel-arrival-date">
+              <label class="form-label" for="arrival-date">Дата заезда:</label>
+              <input class="modal-field" type="text" id="arrival-date" name="arrival-date" placeholder="27 апреля 2020">
+              <button type="button" class="date-button"></button>
+              <span class="invalid-date">Мы не можем отправить вас в прошлое.</span>
+              <span class="valid-date no-show">На эти даты есть свободные номера. Пока есть.</span>
+            </div>
+            <div class="field-group hotel-departure-date">
+              <label class="form-label" for="departure-date">Дата выезда:</label>
+              <input class="modal-field" type="text" id="departure-date" name="departure-date" placeholder="1 сентября 2021">
+              <button type="button" class="date-button"></button>
+              <span class="valid-date">На эти даты есть свободные номера. Пока есть.</span>
+              <span class="invalid-date no-show">Мы не можем отправить вас в прошлое.</span>
+            </div>
+            <div class="quantity-wrapper">
+              <div class="field-group adults-quantity">
+                <label class="form-label" for="adults">Взрослые:</label>
+                <input class="modal-field" type="text" id="adults" name="adults" placeholder="2">
+                <button type="button" class="minus-button">
+                  <svg class="button-svg" width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
+                  </svg>
+                </button>
+                <button type="button" class="plus-button">
+                  <svg class="button-svg" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="field-group children-quantity">
+                <span class="form-label form-label-icon">
+                <label class="form-label" for="children">Дети:</label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type button aria-labelledby="tooltip-label">i</button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
+              </span>
+                <input class="modal-field" type="text" id="children" name="children" placeholder="1">
+                <button type="button" class="minus-button">
+                  <svg class="button-svg" width="13" height="1" viewBox="0 0 13 1" fill="black" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0L0 1L13 1V0L0 0Z"/>
+                  </svg>
+                </button>
+                <button type="button" class="plus-button">
+                  <svg class="button-svg" width="13" height="13" viewBox="0 0 13 13" fill="black" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <button class="button search-submit button-blue" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
+
+    </div>
   </div>
  </body>
 </html>
