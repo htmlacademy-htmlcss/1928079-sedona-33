@@ -180,7 +180,8 @@
           </svg>
          </a> 
     </footer>
-    <div class="modal-container modal-container-close">
+    <div class="modal-container">
+      <!-- модальное окно открывается при добавлении класса "is-open" -->
       <div class="modal modal-search">
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
@@ -196,15 +197,16 @@
               <label class="form-label" for="arrival-date">Дата заезда:</label>
               <input class="modal-field" type="text" id="arrival-date" name="arrival-date" placeholder="27 апреля 2020">
               <button type="button" class="date-button"></button>
+              <!-- состояние поля указывается добавлением класса "is-valid" для "valid-date", "is-invalid" для "invalid-date" -->
+              <span class="valid-date">На эти даты есть свободные номера. Пока есть.</span>
               <span class="invalid-date">Мы не можем отправить вас в прошлое.</span>
-              <span class="valid-date no-show">На эти даты есть свободные номера. Пока есть.</span>
             </div>
             <div class="field-group hotel-departure-date">
               <label class="form-label" for="departure-date">Дата выезда:</label>
               <input class="modal-field" type="text" id="departure-date" name="departure-date" placeholder="1 сентября 2021">
               <button type="button" class="date-button"></button>
               <span class="valid-date">На эти даты есть свободные номера. Пока есть.</span>
-              <span class="invalid-date no-show">Мы не можем отправить вас в прошлое.</span>
+              <span class="invalid-date">Мы не можем отправить вас в прошлое.</span>
             </div>
             <div class="quantity-wrapper">
               <div class="field-group adults-quantity">

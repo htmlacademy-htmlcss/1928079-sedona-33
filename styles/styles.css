@@ -1346,6 +1346,7 @@ body {
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
   z-index: 2;
+  display: none;
 }
 
 .modal {
@@ -1506,11 +1507,18 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 40px;
+  display: none;
 }
 
 .invalid-date {
   color: #ff5757;
 }
+
+.is-invalid,
+.is-valid {
+  display: block;
+}
+
 
 .tooltip {
   margin-top: 4px;
@@ -1576,12 +1584,8 @@ body {
   margin-right: auto;
 }
 
-.no-show {
-  display: none;
-}
-
-.modal-container-close {
-  /* display: none; */
+.is-open {
+  display: block;
 }
 
 .modal-close-button:hover,
