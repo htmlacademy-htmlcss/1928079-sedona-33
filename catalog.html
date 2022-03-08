@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon.png">
   </head>
   <body>
    <div class="page-wrapper">
@@ -63,38 +64,42 @@
             method="get"
           >
           <div class="filter-by-infrastructure">
-            <h2 class="filter-type">Инфрастурктура:</h2>
+            <h2 class="filter-type">Инфраструктура:</h2>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
                   <input
-                    class="control-input"
+                    class="control-input visually-hidden "
                     type="checkbox"
                     name="infrastructure"
                     value="pool"
-                    checked
-                  /><span class="filter-name">Бассейн</span>
+                    checked/>
+                  <span class="control-mark"></span>
+                  <span class="filter-name">Бассейн</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
                   <input
-                    class="control-input"
+                    class="control-input visually-hidden"
                     type="checkbox"
                     name="infrastructure"
                     value="parking"
                     checked
-                  /><span class="filter-name">Парковка</span>
+                  />
+                  <span class="control-mark"></span>
+                  <span class="filter-name">Парковка</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
                   <input
-                    class="control-input"
+                    class="control-input visually-hidden"
                     type="checkbox"
                     name="infrastructure"
                     value="wi-fi"
-                  /><span class="filter-name">Wi-fi</span>
+                  /><span class="control-mark"></span>
+                  <span class="filter-name">Wi-Fi</span>
                 </label>
               </li>
             </ul>
@@ -106,39 +111,42 @@
               <li class="catalog-filter-item">
                 <label class="control">
                   <input
-                    class="control-input"
+                    class="control-input visually-hidden"
                     type="radio"
                     name="hotel-type"
                     value="hotel"
                     checked
-                  /><span class="filter-name">Гостиница</span>
+                  /><span class="control-mark"></span>
+                  <span class="filter-name">Гостиница</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
                   <input
-                    class="control-input"
+                    class="control-input visually-hidden"
                     type="radio"
                     name="hotel-type"
                     value="motel"
-                  /><span class="filter-name">Мотель</span>
+                  /><span class="control-mark"></span>
+                  <span class="filter-name">Мотель</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
                   <input
-                    class="control-input"
+                    class="control-input visually-hidden"
                     type="radio"
                     name="hotel-type"
                     value="apartments"
-                  /><span class="filter-name">Апартаменты</span>
+                  /><span class="control-mark"></span>
+                  <span class="filter-name">Апартаменты</span>
                 </label>
               </li>
             </ul>
           </div>
   
-          <div class="filter-by-price">
-              <h2 class="filter-type">Стоимость, &#x20bd;:</h2>
+          <fieldset class="filter-by-price">
+              <legend class="filter-type">Стоимость, &#x20bd;:</legend>
            <div class="filter-by-price-wrapper">
              <label>
                   <input
@@ -157,8 +165,20 @@
                   /><span class="price-limit">до</span>
              </label>
            </div>
-          </div>
-            <div class="filter-buttons-wrapper">
+            
+              <div class="range-scale">
+                <div class="range-bar" style="width: 215px">
+                  <button class="range-toggle toggle-min" type="button">
+                    <span class="visually-hidden">Изменить минимальную цену.</span>
+                  </button>
+                  <button class="range-toggle toggle-max" type="button">
+                    <span class="visually-hidden">Изменить максимальную цену.</span>
+                  </button>
+                </div>
+             </div>
+          </fieldset>
+
+          <div class="filter-buttons-wrapper">
               <a class="apply blue-button" href="#">Применить</a>
               <a class="reset" href="#">Сбросить</a>
             </div>
@@ -175,7 +195,8 @@
               method="get"
             >
               <select class="select-control" aria-label="Сортировка">
-                <option value="cheap">Сначала дешёвые</option>
+                <option value="cheap" selected>Сначала дешёвые</option>
+                <option value="popular">Сначала популярные</option>
               </select>
             </form>
             <div class="view-buttons-wrapper">
@@ -291,8 +312,11 @@
                    
           <form class="view-type" action="https://echo.htmlacademy.ru/courses" method="get">
               <span class="view-type-title">Гостиниц на странице:</span>
-              <select class="select-view-type" aria-label="выбрать количествено гостиниц на странице">
-                <option value="4">4</option>
+              <select class="select-control select-view-type" aria-label="выбрать количествено гостиниц на странице">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4" selected>4</option>
               </select>
           </form>
           </div>
