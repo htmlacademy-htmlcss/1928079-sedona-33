@@ -1012,6 +1012,7 @@ body {
 .subscribe-field:invalid {
   background: #ffffff;
   border: 2px solid #ff5757;
+  outline: none;
 }
 
 .button-blue:hover,
@@ -1341,12 +1342,16 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  display: flex;
+  display: none;
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
   z-index: 2;
-  display: none;
+
+}
+
+.is-open {
+  display: flex;
 }
 
 .modal {
@@ -1514,8 +1519,11 @@ body {
   color: #ff5757;
 }
 
-.is-invalid,
-.is-valid {
+.is-invalid .invalid-date {
+  display: block;
+}
+
+.is-valid .valid-date {
   display: block;
 }
 
@@ -1582,10 +1590,6 @@ body {
   right: 0;
   margin-left: auto;
   margin-right: auto;
-}
-
-.is-open {
-  display: block;
 }
 
 .modal-close-button:hover,
