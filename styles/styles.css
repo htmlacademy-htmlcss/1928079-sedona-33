@@ -1204,7 +1204,7 @@ body {
   box-shadow: none;
 }
 
-.filter-by-price-wrapper input:hover {
+.filter-by-price-wrapper:hover {
   border-color: rgba(255, 255, 255, 0.6);
 }
 
