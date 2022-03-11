@@ -201,6 +201,7 @@
                     name="low-price"
                     placeholder="0"
                     aria-label="Минимальная цена"
+                    required
                   /><span class="price-limit">от</span>
                 </label>
                 <label>
@@ -210,6 +211,7 @@
                     name="high-price"
                     placeholder="9000"
                     aria-label="Максимальная цена"
+                    required
                   /><span class="price-limit">до</span>
                 </label>
               </div>
@@ -229,8 +231,8 @@
               </div>
             </fieldset>
             <div class="filter-buttons-wrapper">
-              <a class="apply blue-button" href="#">Применить</a>
-              <a class="reset" href="#">Сбросить</a>
+              <button class="apply blue-button" type="submit">Применить</button>
+              <button class="reset" type="reset">Сбросить</button>
             </div>
           </form>
         </section>
@@ -424,6 +426,7 @@
               name="email"
               placeholder="Ваш e-mail"
               aria-label="Поле для ввода e-mail"
+              required
             />
             <button class="subscribe-button button-blue">Подписаться</button>
           </form>
